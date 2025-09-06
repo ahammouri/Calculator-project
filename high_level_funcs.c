@@ -82,6 +82,7 @@ ReadAndEchoInput(char *input_buffer, int input_buffer_size)
         if (j >= input_buffer_size - 1)
         {
             j = input_buffer_size - 1;
+            break; // Prevent buffer overflow
         }
 
 		if ((key != '?') && false == b_cleared)
